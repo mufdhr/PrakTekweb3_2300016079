@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet" /> 
+</head>
+<html>
+<head>
+    <title>Tekweb 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+<body>
+           
+    <div class="container">
+        <div class="profile-pic"></div>
+        <h1>About Me</h1>
+        <p>Hi, saya Muf</p>
+        <h2>Projects</h2>
+        <p>Project 1 -sudah selesai</p>
+        <p>Project 2 - sedang dikerjakan.</p>
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p><a href="https://www.instagram.com/mufiiidhr_/profilecard/?igsh=">@mufidhr</a></p>
+            <p><a href="https://www.linkedin.com/in/rohmah-mufidah-347225325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">RohmahMufidah</a></p>
+        </div>
+         
+            <h2>My To-Do List</h2>
+            <input type="text" id="new-task" placeholder="Add a new task...">
+            <button onclick="addTask()">Add</button>
+            <div class="appearance-buttons">
+                <h2>Change Appearance</h2>
+                <select id="background-color" onchange="changeBackgroundColor(this.value)">
+                    <option value="">Select Background Color</option>
+                    <option value="lightblue">Light Blue</option>
+                    <option value="lightgreen">Light Green</option>
+                    <option value="lightyellow">Light Yellow</option>
+                </select>
+                <button onclick="increaseFontSize()">Increase Font Size</button>
+                <button onclick="decreaseFontSize()">Decrease Font Size</button>
+                <button onclick="changeFontStyle()">Change Font Style</button>
+            
+            </div>
+            <label for="font-size">Adjust Font Size:</label>
+            <input type="range" id="font-size" min="10" max="30" value="16">
+            </select>
+            <br>
+            <input type="checkbox" id="dark-mode">
+            <label for="dark-mode">Toggle Dark Mode</label>
+            <br>
+            
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
